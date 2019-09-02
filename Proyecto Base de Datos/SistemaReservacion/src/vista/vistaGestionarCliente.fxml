@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.gestionarClienteController">
+   <children>
+      <TableView fx:id="tableE" layoutX="245.0" layoutY="11.0" onMouseClicked="#seleccionarEmpleado" prefHeight="344.0" prefWidth="552.0" stylesheets="@../css/estilosTable.css">
+        <columns>
+          <TableColumn fx:id="cid" prefWidth="61.0" text="ID" />
+          <TableColumn fx:id="cnom" prefWidth="78.0" text="NOMBRE" />
+            <TableColumn fx:id="cape" prefWidth="77.0" text="APELLIDO" />
+            <TableColumn fx:id="cdir" text="DIRECCION" />
+            <TableColumn fx:id="ctele" prefWidth="81.0" text="TELEFONO" />
+            <TableColumn fx:id="cusu" prefWidth="78.0" text="USUARIO" />
+            <TableColumn fx:id="cclave" prefWidth="96.0" text="CLAVE" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="28.0" text="Datos del Cliente">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="82.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="220.0" spacing="7.0" style="-fx-border-color: #a93114;">
+         <children>
+            <JFXTextField fx:id="txtid" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Id" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtnombre" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Nombre" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtapellido" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Apellido" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtdir" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Direccion" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txttele" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Telefono" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtuser" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Usuario" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtclave" focusColor="#a93114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" promptText="Clave" unFocusColor="#f38064">
+               <font>
+                  <Font name="Consolas Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="588.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#actualizar" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #a93114;" text="Actualizar" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="354.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registrar" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #a93114;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
